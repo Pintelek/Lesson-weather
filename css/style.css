@@ -24,7 +24,7 @@ input {outline:none;}
 }
 
 .body{
-    background: url('../img/Background.png')0 0/cover no-repeat fixed;
+    background: url(../img/Background.png)0 0/cover no-repeat fixed;
     height: 100%;
 }
 
