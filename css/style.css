@@ -2,26 +2,100 @@
     margin: 0;
    
 }
-html, body{
+html{
      font-size: 16px;
     box-sizing: border-box;
     color: rgb(2, 17, 59);
+    height: 100%;
 }
-body{
-    background-color: rgb(51, 99, 46);
+ul, li{
+  list-style: none;
+  padding-left: 0;
+  display: block;
+}
+a{
+  display: block;
+}
+input {outline:none;}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.body{
+    background: url(/img/Background.png)0 0/cover no-repeat fixed;
+    height: 100%;
 }
 
 .container  {
-    padding: 20px;
-    margin: 50px auto;
-    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 85%;
     min-height: 300px;
     text-align: center;
-    border: 2px solid rgb(236, 26, 107);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgb(44, 23, 63);
-    background: #ffedb0cb;
+    /* border: 2px solid rgb(236, 26, 107); */
+    /* border-radius: 10px; */
+    /* box-shadow: 3px 3px 10px rgb(44, 23, 63); */
+    /* background: rgba(26, 23, 75, .7)  */
+    /* url(/img/rain.gif) 0 0/cover no-repeat; */
 }
+/* ===========================FOOTER=============== */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 40px;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* border-radius: 10px; */
+  /* box-shadow: 3px 3px 10px rgb(44, 23, 63); */
+}
+.logo{
+  width: 70px;
+  margin-right: auto;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.nav-form{
+  min-width: 100px;
+  background: rgba(4, 31, 105, 0.432);
+  padding: 8px 15px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  box-shadow: 2px 2px 7px rgb(2, 17, 59);
+  color: rgb(252, 246, 190);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav-form:hover{
+  background: rgba(72, 97, 165, 0.486);
+  transition: 800ms;
+}
+
+.nav-btn:active{
+  background: rgba(9, 30, 88, 0.753);
+  transition: 800ms;
+}
+
+.search{
+  margin-right: 10px;
+}
+
+.search:focus-visible{
+  border: 1px solid rgb(9, 39, 124);
+  background: rgba(9, 30, 88, 0.753);
+  transition: 800ms;
+}
+
+/* ============================ */
 .name-citi{
     margin: 10px auto;
 }
@@ -47,7 +121,7 @@ li::first-letter {
     margin: 5px auto;
     border-radius: 9px;
     min-height: 30px;
-    color: rgb(7, 22, 7);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 700;
 }

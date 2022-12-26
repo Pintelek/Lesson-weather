@@ -5,12 +5,40 @@
    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather</title>
 </head>
-<body>
+<body class="body">
     <div class="container">
-        <input placeholder="Введите ваш город" type="text" class="i-1">
+      <footer class="footer">
+        <a href="#" class="footer-logo">
+          <img class="logo" src="/img/logo1.png" alt="">
+        </a>
+        <nav class="footer-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <input type="text" class="nav-form search">
+              <button class="search-btn nav-form nav-btn">Поиск</button>
+            </li>
+            <li class="nav-item">
+              <button class="one-day nav-btn nav-form nav-btn">сегодня</button>
+            </li>
+            <li class="nav-item">
+              <button class="three-day nav-btn nav-form nav-btn">на 3 дня</button>
+            </li>
+            <li class="nav-item">
+              <button class="week nav-btn nav-form nav-btn">неделя</button>
+            </li>
+            <li class="nav-item">
+              <button class="month nav-btn nav-form nav-btn">месяц</button>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+        <!-- <input placeholder="Введите ваш город" type="text" class="i-1">
         <button class="b-1">Узнать погоду</button>
         <div class="window-weather">
             <h1 class="name-citi"></h1>
@@ -20,7 +48,7 @@
                 <li class="weather-list-name"></li>
                 <li class="weather-list-icon"></li>
                 
-            </ul>
+            </ul> -->
         </div>
     </div>
     <script src="./script.js"></script>
