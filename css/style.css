@@ -11,7 +11,6 @@ html{
 ul, li{
   list-style: none;
   padding-left: 0;
-  display: block;
 }
 a{
   display: block;
@@ -33,7 +32,7 @@ input {outline:none;}
     margin-top: 20px;
     width: 85%;
     min-height: 300px;
-    text-align: center;
+    /* text-align: center; */
     /* border: 2px solid rgb(236, 26, 107); */
     /* border-radius: 10px; */
     /* box-shadow: 3px 3px 10px rgb(44, 23, 63); */
@@ -94,29 +93,95 @@ input {outline:none;}
   background: rgba(9, 30, 88, 0.753);
   transition: 800ms;
 }
-
-/* ============================ */
-.name-citi{
-    margin: 10px auto;
+/* =============MAIN==================== */
+.main{
+  padding: 15px 25px;
+  margin-top: 45px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px rgb(2, 17, 59);
+  width: 45%;
+  min-height: 300px;
 }
-.temperatura{
+/* =========== */
+.location{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-logo{
+  width: 50px;
+  height: 50px;
+}
+.location-logo .green{
+  fill: rgb(86, 138, 99);
+}
+.location-logo .blue{
+  fill: rgb(97, 121, 185);
+}
+.location-title{
+  font-size: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+.now-time{
+  font-size: 18px;
+  font-style: italic;
+}
+/* ============= */
+.weather-list{
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  font-size: 30px;
+}
+.weather{
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.rainfall-icon img{
+  height: 70px;
+  width: 90px;
+}
+.weather-feel{
+  font-size: 30px;
+}
+.rainfall, .feel-deg{
+  font-weight: 700;
+}
+.rainfall:first-letter{
+  text-transform: uppercase;
+}
+/* ======== */
+
+.main{
+  background: rgba(11, 24, 61, 0.7) url(../img/snow.gif)0 0/cover no-repeat;
+  /* background: rgba(11, 24, 61, 0.7); */
+  color: aliceblue;
+}
+/* ============================ */
+/* .name-citi{
+    margin: 10px auto;
+} */
+/* .temperatura{
     margin-top: 50px;
     font-size: 60px;
     margin-bottom: 50px;
     font-weight: 700;
-}
-li::first-letter {
+} */
+/* li::first-letter {
     text-transform: uppercase;
-}
-.weather-list{
+} */
+/* .weather-list{
     font-size: 25px;
     font-style: italic;
     font-weight: 600;
     list-style: none;
     padding: 0;
     text-align: center;
-}
-.i-1{
+} */
+/* .i-1{
     text-align: center;
     margin: 5px auto;
     border-radius: 9px;
@@ -135,4 +200,4 @@ li::first-letter {
     background: green;
     display: block;
     min-width: 200px;
-}
+} */
