@@ -4,6 +4,7 @@ const GPS = document.querySelector('.location-logo');
 let geo;
 let lon1;
 let lat1;
+console.log('all worck')
 
 //===========получение Геоданных===========
 GPS.onclick = getGeoposition;
