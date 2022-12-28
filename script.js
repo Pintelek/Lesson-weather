@@ -30,7 +30,11 @@ SearchBtn.onclick = getCitiCoordinate;
 
 //================================================================================
 function getCitiCoordinate(){
-
+  if(!citi.value){
+    console.log(2);
+      getGeoposition();
+      return;
+  }
     fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${citi.value}&limit=1&appid=57da65640cf3a7d0e0d8829f4348de3a`)
       .then(function(resp) {return resp.json() })
       .then(function(dataName) { 
@@ -72,7 +76,7 @@ function getWeater(){
         document.querySelector('.location-title').textContent = data.city.name;
         document.querySelector('.weather').innerHTML = Math.round(data.list[0].main.temp) + '&deg';
         document.querySelector('.rainfall').innerHTML = `${data.list[0].weather[0].description}`;
-        document.querySelector('.rainfall-icon').innerHTML = `<img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png" alt="">`;
+        document.querySelector('.rainfall-icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png" alt="">`;
         document.querySelector('.speed-wind').innerHTML = `Ветер ${data.list[0].wind.speed} м/с`;
         document.querySelector('.now-time').innerHTML = date_time();
       setInterval(function(){document.querySelector('.now-time').innerHTML = date_time();
